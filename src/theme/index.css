@@ -1,9 +1,7 @@
 :root {
   --color-primary: #003f63;
   --color-secondary: #f2b138;
-  --color-accent: #353d40;
-  --color-lightaccent: #bdbdbd;
-  /* ... */
+  --color-white: "#fff";
 }
 
 @tailwind base;

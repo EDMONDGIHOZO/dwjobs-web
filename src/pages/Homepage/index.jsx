@@ -32,7 +32,7 @@ const Homepage = () => {
           </div>
           <div className=" md:w-2/5 bg-lightAccent p-6">
             <div className="flex justify-end align-center border-b-2 pb-6 p-2 ">
-              <Rfb title="Login" color="accent" textColor={"white"} />
+              <Rfb title="Login" color="secondary" textColor={"white"} />
               <Rfb title="SignUp" color="primary" textColor={"white"} />
             </div>
           </div>
