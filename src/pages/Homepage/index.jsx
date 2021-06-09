@@ -78,11 +78,15 @@ const Homepage = () => {
               />
               <TalentCard
                 title={"Engineers"}
-                description={"hire the only verified photographers in town"}
+                description={
+                  "Civil engineer, Mechanical engineer, Electrical engineer, Environmental engineer."
+                }
               />
               <TalentCard
                 title={"Hospitality"}
-                description={"Cooks, massagers, ushers, translators"}
+                description={
+                  "Cooks, massagers, ushers, translators, Event Planners, Housekeeper"
+                }
               />
             </div>
           </div>

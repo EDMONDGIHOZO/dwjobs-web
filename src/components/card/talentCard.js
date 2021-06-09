@@ -4,6 +4,10 @@ import Pavatar from "../avatar/pictureAvatar";
 const TalentCard = (props) => {
   const { title, description } = props;
 
+  const getRandom = (max) => {
+    return Math.floor(Math.random() * max);
+  };
+
   return (
     <div className="py-2 md:p-0 max-h-72">
       <div className="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
@@ -20,11 +24,11 @@ const TalentCard = (props) => {
             {/* end of avatar */}
           </div>
           <div className="flex item-center justify-between mt-3">
-            <h1 className="text-gray-700 font-regular text-sm py-2">
-              60 Ready
+            <h1 className="text-gray-700 font-regular text-sm py-2 text-green-600">
+              {getRandom(200)} Ready
             </h1>
             <button className="p-3 bg-primary text-white text-xs font-bold uppercase hover:bg-secondary">
-              View designers
+              View {title}
             </button>
           </div>
         </div>
