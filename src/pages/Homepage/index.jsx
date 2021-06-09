@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "@/assets/images/logo.png";
 import Rfb from "@/components/buttons/rfb";
+import TalentCard from "@/components/card/talentCard";
+
 const Homepage = () => {
   return (
     <div className="wrapper">
@@ -20,13 +22,14 @@ const Homepage = () => {
               </p>
             </div>
             <div className="mt-10 grid grid-cols-1 gap-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3">
+              <div className="flex justify-around">
                 <input
                   type="text"
                   placeholder="eg: photographer, carpenter"
-                  className="bg-gray-300 max-w-full focus:outline-none text-gray-700 rounded p-3"
+                  className="bg-gray-100 w-10/12  focus:outline-none rounded-l-full p-3"
                 />
                 <Rfb
+                  rightborder={"rounded-r-full"}
                   title="search"
                   color="bg-secondary"
                   textColor={"text-accent"}
@@ -34,14 +37,39 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className=" md:w-2/5 w-full bg-lightAccent p-6">
+          <div className=" md:w-2/5 w-full bg-gray-100 p-6">
             <div className="flex justify-end align-center border-b-2 pb-6 p-2 ">
               <Rfb
                 title="Login"
                 color="bg-secondary"
                 textColor={"text-white"}
               />
-              <Rfb title="SignUp" color="bg-primary" textColor={"text-white"} />
+              <Rfb title="Join" color="bg-primary" textColor={"text-white"} />
+            </div>
+
+            <h1 className="font-bold uppercase text-gray-500 text-2xl my-5 text-center">
+              Available talents
+            </h1>
+
+            <div className="md:grid grid-cols-2 gap-3 my-10 overscroll-y-contain">
+              <TalentCard
+                title={"Designers"}
+                description={
+                  "hire best designers in kigalier , with enough experience"
+                }
+              />
+              <TalentCard
+                title={"Developers"}
+                description={"hire theerererer only best developers in town"}
+              />
+              <TalentCard
+                title={"Photographers"}
+                description={"hire the only verified photographers in town"}
+              />
+              <TalentCard
+                title={"Architects"}
+                description={"hire the only verified photographers in town"}
+              />
             </div>
           </div>
         </div>
