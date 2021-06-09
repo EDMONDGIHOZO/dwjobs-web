@@ -26,14 +26,22 @@ const Homepage = () => {
                   placeholder="eg: photographer, carpenter"
                   className="bg-gray-300 max-w-full focus:outline-none text-gray-700 rounded p-3"
                 />
-                <Rfb title="search" color="secondary" textColor={"accent"} />
+                <Rfb
+                  title="search"
+                  color="bg-secondary"
+                  textColor={"text-accent"}
+                />
               </div>
             </div>
           </div>
           <div className=" md:w-2/5 bg-lightAccent p-6">
             <div className="flex justify-end align-center border-b-2 pb-6 p-2 ">
-              <Rfb title="Login" color="secondary" textColor={"white"} />
-              <Rfb title="SignUp" color="primary" textColor={"white"} />
+              <Rfb
+                title="Login"
+                color="bg-secondary"
+                textColor={"text-white"}
+              />
+              <Rfb title="SignUp" color="bg-primary" textColor={"text-white"} />
             </div>
           </div>
         </div>
