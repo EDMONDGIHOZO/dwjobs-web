@@ -1,8 +1,16 @@
+:root {
+  --color-primary: #003f63;
+  --color-secondary: #f2b138;
+  --color-accent: #353d40;
+  --color-lightaccent: #bdbdbd;
+  /* ... */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-ody {
+body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,4 +20,8 @@ ody {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.intro {
+  color: #fff;
 }
