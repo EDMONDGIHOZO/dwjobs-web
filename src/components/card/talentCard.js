@@ -5,7 +5,7 @@ const TalentCard = (props) => {
   const { title, description } = props;
 
   return (
-    <div className="py-2 md:p-0">
+    <div className="py-2 md:p-0 max-h-72">
       <div className="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="p-4">
           <h1 className="text-gray-900 font-bold text-2xl">{title}</h1>

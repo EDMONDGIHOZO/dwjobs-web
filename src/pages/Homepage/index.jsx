@@ -8,13 +8,13 @@ const Homepage = () => {
     <div className="wrapper">
       <section className="bg-gray-100">
         <div className="md:flex">
-          <div className="md:w-3/5 w-full h-full bg-primary md:h-screen md:p-20 p-4">
+          <div className="md:w-2/4 w-full h-full bg-primary md:h-screen md:p-20 p-4">
             <div className="logo-container">
               <img src={logo} alt="dw-jobs" className="logo my-10" />
             </div>
             <div className="intro mt-20">
               <p className="md:text-4xl text-4md font-bold leading-snug my-5">
-                Find your dream technical Job, or hire the talents from 10%
+                Find the job you deserve , or hire exclusive talents in Rwanda
               </p>
               <p className="md:text-2xl text-2md font-weight-bold">
                 We evaluate every applied talent to this platform and select
@@ -37,7 +37,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div className=" md:w-2/5 w-full bg-gray-100 p-6">
+          <div className=" md:w-2/4 w-full bg-gray-100 p-6">
             <div className="flex justify-end align-center border-b-2 pb-6 p-2 ">
               <Rfb
                 title="Login"
@@ -55,20 +55,34 @@ const Homepage = () => {
               <TalentCard
                 title={"Designers"}
                 description={
-                  "hire best designers in kigalier , with enough experience"
+                  "we have Graphic Designers, Interior Designers, Web Designers, game designers, ui designers, ux designers ..."
                 }
               />
               <TalentCard
                 title={"Developers"}
-                description={"hire theerererer only best developers in town"}
+                description={
+                  "Frontend Developer, Full stack Developer, Mobile Developer, Data Scientist Developer, DevOps Developer"
+                }
               />
               <TalentCard
-                title={"Photographers"}
-                description={"hire the only verified photographers in town"}
+                title={"Artists"}
+                description={
+                  "singers, photographers , dancers, painters, illustrators, actors"
+                }
               />
               <TalentCard
                 title={"Architects"}
+                description={
+                  "Commercial Architect , Residential Architect , Industrial Architect, Conservation Architect"
+                }
+              />
+              <TalentCard
+                title={"Engineers"}
                 description={"hire the only verified photographers in town"}
+              />
+              <TalentCard
+                title={"Hospitality"}
+                description={"Cooks, massagers, ushers, translators"}
               />
             </div>
           </div>
