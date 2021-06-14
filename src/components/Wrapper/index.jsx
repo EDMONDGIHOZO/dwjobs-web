@@ -7,9 +7,9 @@ class Wrapper extends Component {
   render() {
     return (
       <>
-        <main className="bg-white relative h-full overflow-hidden">
+        <main className="bg-gray-50 relative h-full overflow-hidden">
           <Header />
-          <div className="w-full flex self-start my-8 px-20">
+          <div className="w-full flex self-start my-8 md:px-20">
             {this.props.children}
           </div>
         </main>

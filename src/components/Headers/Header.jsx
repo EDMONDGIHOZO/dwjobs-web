@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "@/assets/images/logo.png";
 import Rfb from "../buttons/rfb";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,7 +10,9 @@ const Header = () => {
         <div className="md:flex items-center justify-between py-2 px-8 md:px-12">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold text-white md:text-3xl">
-              <img src={logo} alt="DWJOBS" width="120px" />
+              <Link to={"/"}>
+                <img src={logo} alt="DWJOBS" width="120px" />
+              </Link>
             </div>
             <div className="md:hidden">
               <button
