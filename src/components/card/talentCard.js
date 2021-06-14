@@ -1,16 +1,17 @@
 import React from "react";
 import Pavatar from "../avatar/pictureAvatar";
+import { Link } from "react-router-dom";
 
 const TalentCard = (props) => {
-  const { title, description } = props;
+  const { title, description, slug } = props;
 
   const getRandom = (max) => {
     return Math.floor(Math.random() * max);
   };
 
   return (
-    <div className="py-2 md:p-0 max-h-72">
-      <div className="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="py-2 md:p-0">
+      <div className="flex hover:bg-gray-50 bg-white shadow-lg transform transition duration-500 hover:scale-105 rounded-lg overflow-hidden">
         <div className="p-4">
           <h1 className="text-gray-900 font-bold text-2xl">{title}</h1>
           <p className="mt-2 text-gray-600 text-sm">{description}</p>
@@ -24,12 +25,14 @@ const TalentCard = (props) => {
             {/* end of avatar */}
           </div>
           <div className="flex item-center justify-between mt-3">
-            <h1 className="text-gray-700 font-regular text-sm py-2 text-green-600">
+            <h1 className="font-regular text-sm py-2 text-green-600">
               {getRandom(200)} Ready
             </h1>
-            <button className="p-3 bg-primary text-white text-xs font-bold uppercase hover:bg-secondary">
-              View {title}
-            </button>
+            <Link to={`/category/${slug}`}>
+              <button className="p-3 bg-primary text-white text-xs font-bold uppercase hover:bg-secondary">
+                View {title}
+              </button>
+            </Link>
           </div>
         </div>
       </div>
