@@ -24,7 +24,7 @@ const Homepage = () => {
                 <input
                   type="text"
                   placeholder="eg: photographer, carpenter"
-                  className="w-10/12 bg-gray-100  focus:outline-none rounded-l-full p-3"
+                  className="w-10/12 bg-gray-300   focus:outline-none rounded-l-full p-3"
                 />
                 <Rfb
                   rightborder={"rounded-r-full"}
