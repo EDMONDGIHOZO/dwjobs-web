@@ -9,7 +9,7 @@ class Wrapper extends Component {
       <>
         <main className="bg-gray-50 relative h-full overflow-hidden">
           <Header />
-          <div className="w-full flex self-start my-8 md:px-20">
+          <div className="w-full flex self-start min-h-screen my-8 md:px-20">
             {this.props.children}
           </div>
         </main>

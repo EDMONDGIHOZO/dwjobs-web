@@ -30,10 +30,22 @@ const Header = () => {
             </div>
           </div>
           <div className="md:flex flex-col md:flex-row -mx-2 hidden">
-            <Rfb title="Jobs" color="bg-white" textColor={"text-primary"} />
-            <Rfb title="Recruit" color="bg-white" textColor={"text-primary"} />
-            <Rfb title="Login" color="bg-white" textColor={"text-primary"} />
-            <Rfb title="Join" color="bg-primary" textColor={"text-white"} />
+            <Link to={"/jobs"}>
+              <Rfb title="Jobs" color="bg-white" textColor={"text-primary"} />
+            </Link>
+            <Link to={"/recruit"}>
+              <Rfb
+                title="Recruit"
+                color="bg-white"
+                textColor={"text-primary"}
+              />
+            </Link>
+            <Link to={"/login"}>
+              <Rfb title="Login" color="bg-white" textColor={"text-primary"} />
+            </Link>
+            <Link to={"/join"}>
+              <Rfb title="Join" color="bg-primary" textColor={"text-white"} />
+            </Link>
           </div>
         </div>
       </nav>
