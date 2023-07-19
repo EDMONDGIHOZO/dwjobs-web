@@ -1,12 +1,11 @@
 // rfb: rounded flat button
-
 import React from "react";
 
 const Rfb = (props) => {
-  const { title, color, textColor, rightborder } = props;
+  const { title, color, textColor, rightBorder } = props;
   return (
     <button
-      className={`p-2 w-24 hover:bg-gray-700 hover:text-white  rounded-l-none ${rightborder} ${color} ${textColor}`}
+      className={`p-2 w-24 hover:bg-gray-700 text-white hover:text-white  rounded-l-none ${rightBorder} ${color} ${textColor}`}
     >
       {title}
     </button>

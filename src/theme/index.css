@@ -1,12 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color-primary: #003f63;
   --color-secondary: #f2b138;
   --color-white: "#fff";
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
   margin: 0;

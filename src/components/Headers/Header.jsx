@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="w-full h-16 z-40">
-      <nav className="bg-white  shadow-sm">
+      <nav className="shadow bg-white">
         <div className="md:flex items-center justify-between py-2 px-8 md:px-12">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold text-white md:text-3xl">
